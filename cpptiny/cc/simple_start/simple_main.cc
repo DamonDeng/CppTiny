@@ -1,3 +1,4 @@
+#include <glog/logging.h>
 #include <iostream>
 #include "neural/neural.h"
 
@@ -8,6 +9,8 @@ int main(int argc, char* argv[]){
   cout << "Rock said: What are you doing?" << endl<<endl;
   cout << "Papa is writing some testing code." << endl<<endl;
   cout << "Trying to write some code with objects" << endl << endl;
+
+  LOG(INFO) << "Information logging with LOG fuction from glog/logging.h";
 
   Neural testingNeural = Neural();
   string theNameWeGot = testingNeural.getName();

@@ -5,14 +5,22 @@
 
 using namespace std;
 
-class Neural{
-  public:
-    string getName();
+namespace dneural {
 
-  private:
-    string name;
 
-};
 
+
+  class Neural{
+    public:
+      Neural();
+      string getName();
+      void setName(string inputName);
+
+    private:
+      string name;
+
+  };
+
+}
 
 #endif
